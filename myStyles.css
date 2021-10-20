@@ -1,0 +1,38 @@
+.notch {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  height: 35px;
+  background-color: #222;
+  border-radius: 0 0 8px 8px;
+  transform: translateX(-50%);
+  z-index: 999999999999998;
+}
+.notch::before, .notch::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 8px;
+  height: 4px;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 0 100%, transparent 6px, #222 4px);
+}
+.notch::after {
+  left: 100%;
+  margin-right: corner-sizepx;
+  background-image: radial-gradient(circle at 100% 100%, transparent 6px, #222 4px);
+}
+.camera{
+  width:17px;
+  height: 17px;
+  background-color:#282828;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 17px;
+  border:2px solid #505050;  
+}

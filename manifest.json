@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "M1MaxLite",
+    "description": "Notch the website up a little.",
+    "version": "0.0.0",
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "css": ["myStyles.css"],
+          "js": ["contentScript.js"]
+        }
+    ]
+
+
+   
+
+
+}
